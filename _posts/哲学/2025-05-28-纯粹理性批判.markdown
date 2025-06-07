@@ -1,7 +1,0 @@
----
-layout: single
-title:  "记《纯粹理性批判》"
-categories: 哲学
----
-
-# 记<<纯粹理性批判>>

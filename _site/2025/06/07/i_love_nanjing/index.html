@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="本博客夹带大量私货，且不符合主流价值观">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="我愛南京 - ">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="
+  你们知道么，那些给他带来声誉的歌都是在你们看不起他的时候写的。
+你们知道么，看着现在你们暧昧的眼神，他想到的是你们以前的冷酷。
+为什么。这他妈是为什么呢。
+为什么五年前你把他当傻逼，五年后你就把他当神。
+
+">
+    
+    <meta property="article:published_time" content=" 2025-06-07T00:00:00Z">
+    
+    
+    <meta property="article:author" content="RickSean">
+    
+    
+    <meta property="article:tag" content="摇滚">
+    
+    
+    <meta property="og:image" content="http://localhost:4000">
+    <meta property="og:url" content="http://localhost:4000/2025/06/07/i_love_nanjing/">
+    <meta property="og:site_name" content="">
+
+    <title>我愛南京 - </title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/no.img">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/2025/06/07/i_love_nanjing/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href=" /css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href=" /css/hux-blog.min.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    <!-- Google AdSense -->
+    <script data-ad-client="ca-pub-6487568398225121" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">RickSean Blog</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="huxblog_navbar">
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/archive/">Archive</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="search-icon">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <script>
+        // Drop Bootstarp low-performance Navbar
+        // Use customize navbar with high-quality material design animation
+        // in high-perf jank-free CSS3 implementation
+        var $body = document.body;
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+
+        var __HuxNav__ = {
+            close: function () {
+                $navbar.className = " ";
+                // wait until animation end.
+                setTimeout(function () {
+                    // prevent frequently toggle
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = "0px"
+                    }
+                }, 400)
+            },
+            open: function () {
+                $collapse.style.height = "auto"
+                $navbar.className += " in";
+            }
+        }
+
+        // Bind Event
+        $toggle.addEventListener('click', function (e) {
+            if ($navbar.className.indexOf('in') > 0) {
+                __HuxNav__.close()
+            } else {
+                __HuxNav__.open()
+            }
+        })
+
+        /**
+         * Since Fastclick is used to delegate 'touchstart' globally
+         * to hack 300ms delay in iOS by performing a fake 'click',
+         * Using 'e.stopPropagation' to stop 'touchstart' event from 
+         * $toggle/$collapse will break global delegation.
+         * 
+         * Instead, we use a 'e.target' filter to prevent handler
+         * added to document close HuxNav.  
+         *
+         * Also, we use 'click' instead of 'touchstart' as compromise
+         */
+        document.addEventListener('click', function (e) {
+            if (e.target == $toggle) return;
+            if (e.target.className == 'icon-bar') return;
+            __HuxNav__.close();
+        })
+    </script>
+    <!-- Search -->
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/nanjing.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+
+
+
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/nanjing.jpg');
+        background: ;
+    }
+
+    
+</style>
+
+
+
+
+<header class="intro-header" >
+
+    <div class="header-mask"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/archive/?tag=%E6%91%87%E6%BB%9A" title="摇滚">摇滚</a>
+                        
+                    </div>
+                    <h1>我愛南京</h1>
+                    
+                    <h2 class="subheading">我的第一張摇滚唱片</h2>
+                    <span class="meta">Posted by RickSean on June 7, 2025</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <!-- Multi-Lingual -->
+                
+
+				<blockquote>
+  <p>你们知道么，那些给他带来声誉的歌都是在你们看不起他的时候写的。
+你们知道么，看着现在你们暧昧的眼神，他想到的是你们以前的冷酷。
+为什么。这他妈是为什么呢。
+为什么五年前你把他当傻逼，五年后你就把他当神。</p>
+</blockquote>
+
+<p>《我愛南京》是李志的第四張錄音室專輯，也是我真正意義上第一張完整收聽的專輯—此前從未有完整收聽一張專輯的習慣。同時李志可以說是我上大學之後對我影響最大的人，無論是音樂還是思維方式，所以今後的博客我以李先生稱呼他，以表尊敬。</p>
+<h2 id="歌曲列表">歌曲列表</h2>
+<ul>
+  <li>意味</li>
+  <li>苍井空</li>
+  <li>结婚</li>
+  <li>鸵鸟</li>
+  <li>天空之城</li>
+  <li>倒影</li>
+  <li>爱</li>
+  <li>家乡</li>
+  <li>1990年的春天</li>
+  <li>冬妮娅-献给成都</li>
+  <li>听妈妈讲那过去的事情</li>
+  <li>美丽的梭罗河</li>
+  <li>米店</li>
+  <li>思念观世音</li>
+  <li>在那遥远的地方</li>
+</ul>
+
+<h2 id="我和天空之城">我和《天空之城》</h2>
+<p>第一次聽到《天空之城》是 QQ 音樂隨機循環到了一個 cover 版本，當時就覺得十分好聽，特別是歌詞，令人印象深刻。隨後我上 b 站搜索了這首個，播放量最多的是蔣敦豪在《中國好聲音》上的版本。翻看評論區，了解這首歌的原唱是李先生，遂去搜索原曲，當然，各個平臺均無法搜到原曲，而後稍微瞭解了李先生的生平，大致明白爲何無法收聽他的作品，在評論區了解到 audiomack 可以不用翻牆就能聽他的作品，從此開始聽他的《天空之城》。初聽的時候並不十分悅耳，但是能感受到歌聲中的真誠，因此我又去聽了幾首他的其他歌詞，實話說，當時的我認爲他的其他很多個並不好聽，甚至有點粗糲的難聽，最終在我的播放列表就只留下了《天空之城》、《梵高先生》和《鴕鳥》三首歌曲，並循環許久。那時聽歌只流於表面，並不知道歌曲後面的許多故事，當時聽歌也沒有必須要看詞的習慣，所以只是更多的被他的真誠所打動，也因此初聽他的個也並沒有擁有很長的保質期，audiomack 也成爲了我手機裏許久不打開的軟件。</p>
+
+<p>過了幾年，我的人生也經歷了很多變故，處於一個準備重要考試的階段，雖然我並非是一個憂鬱的人，在這個時期也需要音樂來緩解心中苦悶，忽然又想起了李先生的音樂，就又打開了 audiomack，發現已經無法使用，就如同我小的時候有一天想搜索的時候發現 google 再也無法打開一樣。而後我挂上梯子，打開了 youtube 開始聽《我愛南京》和《梵高先生》兩張專輯，猛地發現幾年前在我耳裏粗糙到有些難聽的歌聲此時居然如此打動人，而後我開始發瘋似的聽他這兩張專輯的每一首歌，並開始在互聯網上搜索他的一切個人信息，我了解到他爲什麼不能在他深愛的土地上演出，了解到他泡妞的歷史，了解到他爲什麼希望這個世界變好一些。在 b 站上，我看到了一個叫周開山的 up 主做的視頻<a href="https://www.bilibili.com/video/BV1pX4y1P747/?spm_id_from=333.1387.homepage.video_card.click">《我也愛南京》</a>，在此引用他的一段話。<strong>當“獨立思考”已經變成貶義，記錄真相的人被釘上恥辱柱的時候，當社會越來越無法接納批評，個體卻總在被曲解誤解的情況下，被扣上不接受批評的帽子，甚至毫無來由就從你視線裏消失掉的時候，時代真的在進步嗎。</strong></p>
+
+<p>從此我開始大量聽他的歌，從錄音室聽到現場版，那時我才明白，一個人的歌聲能夠如此粗糙，卻能如此打動人。好的音樂，絕不是所謂的技巧所能定義的。在此也推薦我十分喜愛的《天空之城》的一版編曲，2014-2015“I、O”跨年演唱會的搖滾版。</p>
+
+<p>沒有人會送給我西班牙餡餅，但是他的《天空之城》，至今爲止依然是我最愛的他的作品。</p>
+
+<h2 id="我愛南京裏的其他作品">《我愛南京》裏的其他作品</h2>
+<p>在此只介紹我聽的比較多的幾首作品，由於音樂水平不足，就不從樂理上介紹專輯特色，當然，我也在努力學習樂理，希望有一天能從專業的角度分析樂曲的好壞。</p>
+
+<p>《鴕鳥》是我早期聽的比較多的作品，網上說這首歌是爲了諷刺音樂節亂象所作，實際情況我已無法考證，但是私以爲偶像派歌手諷刺的範圍不止於此。<strong>我沒有他們那麼崇高，也沒有他們那麼裝逼。</strong>希望看到了這篇博客的你也能成爲一個務實而非務虛的人。</p>
+
+<p>《家鄉》更爲著名的是”操他媽版“，來自現場專輯《二零零九年十月十六日事件》，我個人並不十分喜愛這個版本，但是依然對”他們以爲我們想要的只不過是他們輕而易舉所擁有的“深以爲然。從鄉鎮的小學走出，一直走到輝煌的首都，我看到有些人究其一生追求我擁有的東西，我也漸漸迷失在最求別人生來而有的東西的道路中，而他們，甚至都不知道對方的存在。這首詞作保持了一如既往的真誠，也是他對家鄉的土地的熱愛最真摯的體現，我們罪孽沉重的一生也只有家鄉能夠埋葬。</p>
+
+<p>《1990年的春天》這首歌無法多談，但是其悅耳的前奏始終能夠在第一時間調動起我的情緒，讓我想要隨着音樂唱下去。</p>
+
+<p>《米店》這首歌的大名如雷貫耳，每個聽中國搖滾或者民謠的人都聽過各種版本的米店，雖然張瑋瑋和郭龍的原版我認才是最好的版本，但是李先生這個版本的吉他編曲卻十分精妙，讓人第一次聽就能記住。</p>
+
+<h2 id="這是最好的年代">這是最好的年代</h2>
+<p>受他的影響，我開始大量聽搖滾作品，開始聽舌頭樂隊，腰樂隊和木馬樂隊，由此一發不可收拾，認識了大量優秀的樂隊，並聽到我最愛的樂隊也是李先生最愛的樂隊 PinkFloyd 的作品。也是因爲他，我開始沉醉於編曲的精妙，並有了很大想自我演奏的衝動，從此重新撿起了荒廢數年的吉他，並花費大量時間練琴，希望有朝一日能夠成爲一個合格的樂手。互聯網上，“總有人說中國搖滾死在了 1994 年的紅磡”，以至於這句話已經變成了令人厭惡的爛埂。聽到了無數好的作品的我卻想說，這是最好的年代。</p>
+
+<p>更是受他的影響，我開始尋找什麼是”獨立思考”，並開始重新思考我的行爲方式，我希望成爲一個認真的人，一個善良的人，我並不知道這個世界會不會變好，但是我知道我應該做對的事。</p>
+
+
+                <hr style="visibility: hidden;">
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2025/06/06/first/" data-toggle="tooltip" data-placement="top" title="我的第一篇博客">
+                        Previous<br>
+                        <span>我的第一篇博客</span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <hr style="visibility: hidden;">
+
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
+
+                
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+
+<section>
+    
+        <hr class="hidden-sm hidden-xs">
+    
+    <h5><a href="/archive/">FEATURED TAGS</a></h5>
+    <div class="tags">
+        
+        
+        
+        
+        
+    </div>
+</section>
+
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- add support for mathjax by voleking-->
+
+
+
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "RickSean";
+    var disqus_identifier = "/2025/06/07/i_love_nanjing";
+    var disqus_url = "http://localhost:4000/2025/06/07/i_love_nanjing/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'right',
+          // icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- SNS Link -->
+                
+
+
+<ul class="list-inline text-center">
+
+
+  
+  <li>
+    <a href="/feed.xml">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a href="https://twitter.com/ricksean">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://github.com/ricksean">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; RickSean Blog 2025
+                    <br>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Simple Jekyll Search -->
+<script src="/js/simple-jekyll-search.min.js"></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+
+
+
+
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function () {
+        var $nav = document.querySelector("nav");
+        if ($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-49627206-1';
+    var _gaDomain = 'huangxuan.me';
+
+    // Originial
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        // interop with multilangual 
+        if ('' == 'true') {
+            _containerSelector = 'div.post-container.active'
+        } else {
+            _containerSelector = 'div.post-container'
+        }
+
+        // init
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        // clean
+        $(selector).html('')
+
+        // appending
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+<!-- Multi-Lingual -->
+
+
+<!-- Simple Jekyll Search -->
+<script>
+    // https://stackoverflow.com/questions/1912501/unescape-html-entities-in-javascript
+    function htmlDecode(input) {
+        var e = document.createElement('textarea');
+        e.innerHTML = input;
+        // handle case of empty input
+        return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('search-results'),
+        json: '/search.json',
+        searchResultTemplate: '<div class="post-preview item"><a href="{url}"><h2 class="post-title">{title}</h2><h3 class="post-subtitle">{subtitle}</h3><hr></a></div>',
+        noResultsText: 'No results',
+        limit: 50,
+        fuzzy: false,
+        // a hack to get escaped subtitle unescaped. for some reason, 
+        // post.subtitle w/o escape filter nuke entire search.
+        templateMiddleware: function (prop, value, template) {
+            if (prop === 'subtitle' || prop === 'title') {
+                if (value.indexOf("code")) {
+                    return htmlDecode(value);
+                } else {
+                    return value;
+                }
+            }
+        }
+    });
+
+    $(document).ready(function () {
+        var $searchPage = $('.search-page');
+        var $searchOpen = $('.search-icon');
+        var $searchClose = $('.search-icon-close');
+        var $searchInput = $('#search-input');
+        var $body = $('body');
+
+        $searchOpen.on('click', function (e) {
+            e.preventDefault();
+            $searchPage.toggleClass('search-active');
+            var prevClasses = $body.attr('class') || '';
+            setTimeout(function () {
+                $body.addClass('no-scroll');
+            }, 400)
+
+            if ($searchPage.hasClass('search-active')) {
+                $searchClose.on('click', function (e) {
+                    e.preventDefault();
+                    $searchPage.removeClass('search-active');
+                    $body.attr('class', prevClasses);  // from closure 
+                });
+                $searchInput.focus();
+            }
+        });
+    });
+</script>
+
+
+<!-- Image to hack wechat -->
+<img src="/img/pinkfloyd-animals.jpg" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
