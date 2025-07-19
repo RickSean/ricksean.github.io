@@ -4,7 +4,7 @@ title: "過去一年搖滾唱片記錄"
 subtitle: "2024 2025"
 date: 2025-06-17
 author: "RickSean"
-header-img: "img/pinkfloyd-animals.jpg"
+header-img: ""
 tags: [摇滚]
 ---
 >搖滾樂不重要，重要的是你們
