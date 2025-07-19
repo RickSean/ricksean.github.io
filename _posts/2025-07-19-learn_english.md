@@ -4,7 +4,7 @@ title: "学英语"
 subtitle: "一次簡單的思維實踐"
 date: 2025-07-19
 author: "RickSean"
-header-img: ""
+header-img: "img/pinkfloyd-animals.jpg"
 tags: [雜談]
 ---
 
